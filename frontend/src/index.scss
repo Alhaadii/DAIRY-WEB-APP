@@ -1,0 +1,21 @@
+$primary:#937dc2;
+$secondary:#ac9ba6;
+$danger:#fa76cc;
+
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+input, button,select, textarea {
+    border-radius: 0 !important;
+}
+
+.title {
+        font-family: "Yellowtail", serif !important;
+        font-weight: 400;
+        font-style: normal;
+}
+
+#root{
+    color: #937dc2;
+}
