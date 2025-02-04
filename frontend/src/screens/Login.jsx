@@ -1,3 +1,5 @@
+import FormContainer from "../components/FormContainer";
+
 export const Login = () => {
-  return <div>Login</div>;
+  return <FormContainer>Login</FormContainer>;
 };

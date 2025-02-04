@@ -18,7 +18,7 @@ export const Nav = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
-            <li className="nav-item title fs-2">
+            <li className="nav-item title fs-4">
               <Link
                 to="/"
                 className={pathname === "/" ? "active nav-link " : "nav-link"}
@@ -28,19 +28,23 @@ export const Nav = () => {
             </li>
           </ul>
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Avatar name="John Doe" size="50" round={true} />
-
-              {/* <div className="flex justify-content-start align-items-center nav-link">
-                <Avatar name="Foo Bar" />
+            {/* <li className="nav-item">
+              <div className="flex justify-content-start align-items-center nav-link">
+                <Avatar
+                  name="Suleiman Mohamed"
+                  size="25"
+                  round={true}
+                  textSizeRatio={"25px"}
+                  className="mb-1 me-1"
+                />
                 <span>Sulieman Mohamed</span>
-              </div> */}
+              </div>
             </li>
             <li className="nav-item">
               <Link to="/login" className="nav-link">
                 Logout
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 to="/register"
