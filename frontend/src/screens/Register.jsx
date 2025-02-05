@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Register = () => {
   const [error, setError] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -29,10 +30,20 @@ export const Register = () => {
           )}
           <h1 className="text-center title">Registeration form</h1> <hr />
           <div className="mb-3">
+            <label htmlFor="name">Full Name</label>
+            <input
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              className="form-control"
+              id="name"
+              value={name}
+            />
+          </div>
+          <div className="mb-3">
             <label htmlFor="email">Email Address</label>
             <input
               onChange={(e) => setEmail(e.target.value)}
-              type="text"
+              type="email"
               className="form-control"
               id="email"
               value={email}
@@ -59,8 +70,8 @@ export const Register = () => {
             />
           </div>
           <div className="mb-3">
-            <label htmlFor="register">I have Alread An Account? </label>
-            <Link to={"/register"}> Login</Link>
+            <label htmlFor="login">I have Alread An Account? </label>
+            <Link to={"/login"}> Login</Link>
           </div>
           <button className="btn btn-primary w-100 text-light">REGISTER</button>
         </div>
