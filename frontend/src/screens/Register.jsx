@@ -63,7 +63,7 @@ export const Register = () => {
             <label htmlFor="confirmPassword">Confirm Password</label>
             <input
               onChange={(e) => setConfirmPassword(e.target.value)}
-              type="confirmPassword"
+              type="password"
               className="form-control"
               id="confirmPassword"
               value={confirmPassword}
